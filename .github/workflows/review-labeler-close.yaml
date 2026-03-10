@@ -1,8 +1,8 @@
-name: Waiting For Review Labeler
+﻿name: Close Review Labeler
 
 on:
   pull_request:
-    types: [opened]
+    types: [closed]
 
 permissions:
   pull-requests: write
@@ -15,3 +15,4 @@ jobs:
       - uses: kentaro-m/waiting-for-review-labeler@main
         with:
           hours-before-add-label: 0
+          label-name: merged
