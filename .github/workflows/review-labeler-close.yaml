@@ -12,7 +12,12 @@ jobs:
   action:
     runs-on: ubuntu-latest
     steps:
-      - uses: kentaro-m/waiting-for-review-labeler@main
+      - uses: actions/github-script@v7
         with:
-          hours-before-add-label: 0
-          label-name: merged
+          script: |
+            github.rest.issues.addLabels({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              labels: ['merged']
+            })
