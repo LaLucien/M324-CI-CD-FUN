@@ -3,6 +3,10 @@ name: Waiting For Review Labeler
 on:
   pull_request:
 
+permissions:
+  pull-requests: write
+  contents: read
+
 jobs:
   action:
     runs-on: ubuntu-latest
