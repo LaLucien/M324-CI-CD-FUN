@@ -1,6 +1,6 @@
 # M324 CI/CD Fun
 
-This repository contains small GitHub Actions examples for the M324 assignment.
+This repository contains small GitHub Actions examples for the M324 assignment. Hello World
 
 ## Included actions
 
