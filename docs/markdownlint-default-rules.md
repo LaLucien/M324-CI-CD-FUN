@@ -2,7 +2,7 @@
 
 Diese Datei erklaert einige Beispiele, was `markdownlint-cli2-action` automatisch prueft, wenn keine eigene Regelkonfiguration angegeben wird.
 
-### Typische Beispiele
+## Typische Beispiele
 
 ### Ueberschriften
 
